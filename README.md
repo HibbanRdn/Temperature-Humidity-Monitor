@@ -74,7 +74,7 @@ Data dikirim ke **Blynk Dashboard**, dapat dikontrol via **WhatsApp Chatbot** me
 ---
 
 ## 📸 Preview Dashboard
-*(tambahkan screenshot Blynk di sini)*
+/docs/flowchart.png
 
 ---
 
