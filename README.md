@@ -78,5 +78,10 @@ Data dikirim ke **Blynk Dashboard**, dapat dikontrol via **WhatsApp Chatbot** me
 
 ---
 
+## 📸 System Flow
+![System Flowchart](docs/flowchart.png)
+
+---
+
 ## 📜 Lisensi
 MIT License © 2025 Hibban
