@@ -2,9 +2,9 @@
 // Board   : NodeMCU ESP8266
 // Sensor  : DHT11 on Pin D4 (GPIO2)
 
-#define BLYNK_TEMPLATE_ID "TMPL6zCVsOGI-"
-#define BLYNK_TEMPLATE_NAME "IoTHibban"
-#define BLYNK_AUTH_TOKEN "2sIgjM_0fBGpNoGFeuAIYImnoB8fQyBJ"
+#define BLYNK_TEMPLATE_ID "YOUR-TEMPLATE-ID"
+#define BLYNK_TEMPLATE_NAME "YOUR-BLYBK-NAME"
+#define BLYNK_AUTH_TOKEN "YOUR-AUTH-TOKEN"
 
 #include <ESP8266WiFi.h>
 #include <ThingESP.h>
@@ -16,7 +16,7 @@
 DHT dht(DHTPIN, DHTTYPE);
 
 // --- ThingESP Config (WhatsApp) ---
-ThingESP8266 thing("HibbanRdn", "TemperatureIot", "techhibban");
+ThingESP8266 thing("USERNAME", "TEMPLATE", "PASSWORD");
 
 // --- Blynk Config ---
 char auth[] = BLYNK_AUTH_TOKEN;
@@ -79,9 +79,9 @@ void setup() {
   pinMode(BUZZER_PIN, OUTPUT);
 
   // --- WiFi untuk ThingESP & Blynk ---
-  thing.SetWiFi("hib", "12345678");
+  thing.SetWiFi("WIFI-NAME", "PASSWORD");
   thing.initDevice();
-  Blynk.begin(auth, "hib", "12345678");
+  Blynk.begin(auth, "WIFI-NAME", "PASSWORD");
 
   // status awal perangkat
   updateStatusPerangkat();
