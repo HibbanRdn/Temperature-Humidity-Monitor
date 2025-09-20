@@ -73,6 +73,11 @@ Data dikirim ke **Blynk Dashboard**, dapat dikontrol via **WhatsApp Chatbot** me
 
 ---
 
+## 📸 Chatbot
+![ESP32 Setup](docs/Chatbot.png)
+
+---
+
 ## 📸 Preview Dashboard
 ![Dashboard Blynk](docs/BlynkDashboard.png)
 
